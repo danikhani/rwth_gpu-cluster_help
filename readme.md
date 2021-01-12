@@ -37,5 +37,7 @@ echo $CUDA_ROOT
 ## Using Conda 
 Since conda will be installed in $Home, there wont be any problem installing it for your user. the '--user' can used to stay in userspace.
 
-
-
+## Examples
+Tow good examples are written here:
+https://github.com/SamSweere/Covid19-News-Analysis/wiki/RWTH-GPU-Cluster-stuff
+https://github.com/pfackeldey/Machine-Learning/wiki/GPU-Batch-System
