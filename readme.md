@@ -10,7 +10,7 @@ There are two modes for using the GPU-Clusters:
 
 * For using non-thrivial amount of compute time using GPUs you are obliged to use the batch system see [here](https://help.itc.rwth-aachen.de/service/rhr4fjjutttf/article/f9cc426c044145078905a694403d867f/).
 
-* There is also a possiblity to use GPUs for interactive tests, see [here](https://help.itc.rwth-aachen.de/service/rhr4fjjutttf/article/a1beccd9e9dc4044a740ed248f478839/). Note that these tests must be *SHORT* and not too many. The two interacite [front ends](https://help.itc.rwth-aachen.de/service/rhr4fjjutttf/article/3fb4cb953142422dbbb656c1c3253cff/) are equipped with GPUIs are für testing only and not for production jobs of any extent.
+* There is also a possiblity to use GPUs for interactive tests, see [here](https://help.itc.rwth-aachen.de/service/rhr4fjjutttf/article/a1beccd9e9dc4044a740ed248f478839/). Note that these tests must be *SHORT* and not too many. The two interacite [front ends](https://help.itc.rwth-aachen.de/service/rhr4fjjutttf/article/3fb4cb953142422dbbb656c1c3253cff/) are equipped with GPUIs are for testing only and not for production jobs of any extent.
 
 The limitation of both mods are written [here](https://help.itc.rwth-aachen.de/service/rhr4fjjutttf/article/20919ea3f07f4c9da581532def08c35f/)
 
