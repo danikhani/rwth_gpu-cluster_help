@@ -1,21 +1,21 @@
 #!/usr/local_rwth/bin/zsh
  
 ### Job name
-#SBATCH --job-name=epose_100
+#SBATCH --job-name=epose_try
  
 ### File / path where STDOUT will be written, the %J is the job id
-#SBATCH --output=logs/epose_100.%J.log
+#SBATCH --output=logs/epose_try.%J.log
 
 ### Request the time you need for execution. The full format is D-HH:MM:SS
 ### You must at least specify minutes or days and hours and may add or
 ### leave out any other parameters
-#SBATCH --time=23:00:00
+#SBATCH --time=00:01:00
 
 ### number of cpus
-#SBATCH --cpus-per-task=4
+#SBATCH --cpus-per-task=1
 
 ### Request memory you need for your job in MB
-#SBATCH --mem-per-cpu=4G
+#SBATCH --mem-per-cpu=1G
 
 ### load number of gpus
 #SBATCH --gres=gpu:1
@@ -36,6 +36,6 @@ conda activate epose
 ### Run the job
 cd Dokumente/efficientpose/epose_com
 
-python train.py --phi 0 --epochs 10 --weights weights/COCO/efficientdet-d0.h5 linemod dataset/linemod/ --object-id 18
+python script_test.py
 
 echo "Script completed."

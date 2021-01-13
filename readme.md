@@ -5,6 +5,12 @@ This is a quick start for using the rwth cluster. Most of the details are summri
 ## Loging in and Access
 This has been explained really well [here](https://help.itc.rwth-aachen.de/service/rhr4fjjutttf/article/04d4da051b004a208c92c1ce216b116a)
 
+Select a node from [here](https://help.itc.rwth-aachen.de/service/rhr4fjjutttf/article/3fb4cb953142422dbbb656c1c3253cff) and use the following for login
+ssh login:
+```bash
+ssh -l userid login-g.hpc.itc.rwth-aachen.de
+```
+
 ## How to use it
 There are two modes for using the GPU-Clusters:
 
@@ -37,7 +43,22 @@ echo $CUDA_ROOT
 ## Using Conda 
 Since conda will be installed in $Home, there wont be any problem installing it for your user. the '--user' can used to stay in userspace.
 
+## Applying the job
+after writing the job.sh file. You can apply this job with:
+```shell
+sbatch job.sh
+```
+Seeing the status of your jobs:
+```shell
+squeue -u userID
+```
+See predicted starting time of your jobs:
+```shell
+squeue -u dh935586 --start
+```
 ## Examples
 Tow good examples are written here:
 https://github.com/SamSweere/Covid19-News-Analysis/wiki/RWTH-GPU-Cluster-stuff
 https://github.com/pfackeldey/Machine-Learning/wiki/GPU-Batch-System
+
+https://help.itc.rwth-aachen.de/service/rhr4fjjutttf/article/1774cf956ee34bafb2cade94cdef0949
