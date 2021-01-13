@@ -10,10 +10,11 @@ A job script starts with the line
 After that the parameters below will configure the requested resources for the job:
 
 ## Parameters:
-Please note that all values that you define with SBATCH directives are hard values. When you, for example, ask for 6000 MB of memory (--mem=6000MB) and your job uses more than that, the job will be automatically killed by the manager. [source](https://hpc-uit.readthedocs.io/en/latest/jobs/examples.html)
+Please note that all values that you define with SBATCH directives are hard values. When you, for example, ask for 6000 MB of memory (--mem=6000MB) and your job uses more than that, the job will be automatically killed by the manager. [source](https://hpc-uit.readthedocs.io/en/latest/jobs/examples.html).
 
 You may not place any commands before the last SBATCH parameter.
-
+All parameters are listed [here](https://help.itc.rwth-aachen.de/service/rhr4fjjutttf/article/1f18ef48d8444f15bd908c592e0c44fb).
+[More info on accounting](https://help.itc.rwth-aachen.de/service/rhr4fjjutttf/article/090b27dc31484f3c833957978b039b55)
 * Job Name:
 ```bash
 -J --job-name=
