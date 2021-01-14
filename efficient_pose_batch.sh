@@ -33,9 +33,10 @@ echo; export; echo;  nvidia-smi; echo
 source conda3/bin/activate
 conda init
 conda activate epose
+
 ### Run the job
 cd Dokumente/efficientpose/epose_com
 
-python train.py --phi 0 --epochs 10 --weights weights/COCO/efficientdet-d0.h5 linemod dataset/linemod/ --object-id 18
+python train.py --phi 0 --epochs 100 --weights weights/COCO/efficientdet-d0.h5 linemod dataset/linemod/ --object-id 18
 
 echo "Script completed."

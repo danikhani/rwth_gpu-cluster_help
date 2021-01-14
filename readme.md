@@ -22,7 +22,7 @@ The limitation of both mods are written [here](https://help.itc.rwth-aachen.de/s
 
 ## How to apply for GPU-Resources
 'Small use' is available with the free quota, see [here](https://help.itc.rwth-aachen.de/service/rhr4fjjutttf/article/45825b06afb647e194be4a5b9f5b8768/) and [here](https://www.itc.rwth-aachen.de/hpc-projects). Please start with this. If you would need more ressources so file in a project proposal. 
-Remember that only some 5% of our nodes are equipped with GPUs. So If your code is able to run well on CPUs, avoud use of GPUs! It is only profitable to use GPUs if it make the excution (significantly!) faster on a full node withour GPUs. 
+Remember that only some 5% of our nodes are equipped with GPUs. So If your code is able to run well on CPUs, avoid use of GPUs! It is only profitable to use GPUs if it make the excution (significantly!) faster on a full node withour GPUs. 
 
 ## Using Cuda 
 It is possible to switch the cuda versions as written [here](https://help.itc.rwth-aachen.de/service/rhr4fjjutttf/article/85966da9155f4042877b536fa494b489/). For that its important to read and understand the [module system](https://help.itc.rwth-aachen.de/service/rhr4fjjutttf/article/417f822b8a7849eb8c9c2753045ad67f/)
@@ -58,6 +58,7 @@ squeue -u dh935586 --start
 ```
 ## Examples
 Tow good examples are written here:
+
 https://github.com/SamSweere/Covid19-News-Analysis/wiki/RWTH-GPU-Cluster-stuff
 https://github.com/pfackeldey/Machine-Learning/wiki/GPU-Batch-System
 
