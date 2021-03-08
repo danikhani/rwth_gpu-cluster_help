@@ -12,6 +12,9 @@ ssh -l userid login-g.hpc.itc.rwth-aachen.de
 ```
 
 ## How to use it
+
+Imagine the system like this: After logging in via ssh you have a Linux Pc environment. You can use this space to load your data and install the needed programs like conda. You can't run anything for too long in this environment since it's for testing. This environment will be shared across all login nodes. You can use your job-script.sh to access data and programs on this environment and also to save logs or resaults in this envoirment. Later on the data can be transfered with FTP to your PC. 
+
 There are two modes for using the GPU-Clusters:
 
 * For using non-thrivial amount of compute time using GPUs you are obliged to use the batch system see [here](https://help.itc.rwth-aachen.de/service/rhr4fjjutttf/article/f9cc426c044145078905a694403d867f/).
@@ -54,7 +57,11 @@ squeue -u userID
 ```
 See predicted starting time of your jobs:
 ```shell
-squeue -u dh935586 --start
+squeue -u userID --start
+```
+get the live update from the log file:
+```shell
+tail -f /path/logfile.log
 ```
 ## Examples
 Tow good examples are written here:
