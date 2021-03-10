@@ -63,10 +63,24 @@ get the live update from the log file:
 ```shell
 tail -f /path/logfile.log
 ```
-## Examples
-Tow good examples are written here:
+get the 100 last lines from the log file:
+```shell
+tail -n 100 /path/logfile.log
+```
+## Job Examples
+Tow good job script examples are written here:
 
 https://github.com/SamSweere/Covid19-News-Analysis/wiki/RWTH-GPU-Cluster-stuff
 https://github.com/pfackeldey/Machine-Learning/wiki/GPU-Batch-System
 
 https://help.itc.rwth-aachen.de/service/rhr4fjjutttf/article/1774cf956ee34bafb2cade94cdef0949
+
+## Connecting with FTP to transfer files
+Its also possible to use FTP with your prefered programm like FileZilla to transfer files from your PC to the clusters or vice versa. 
+https://help.itc.rwth-aachen.de/service/rhr4fjjutttf/article/db3e5fd39d1d42c9815b4fa689719ac9/
+
+```shell
+xy123456@copy.hpc.itc.rwth-aachen.de
+port: 22
+```
+
